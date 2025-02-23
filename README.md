@@ -6,6 +6,10 @@ This repository contains the work for the class exercise on adversarial examples
 
 ---
 
+$$
+\delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
+$$
+
 ## Objective
 
 - **Adversarial Examples:** Learn how minimal, often imperceptible, perturbations can degrade the performance of neural networks trained on the CIFAR10 dataset.
