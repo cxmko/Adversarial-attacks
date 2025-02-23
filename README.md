@@ -1,4 +1,3 @@
-
 # Deep Learning II – PW5: Adversarial Examples & Git Usage
 
 **Course:** DL3AIISO
@@ -19,17 +18,17 @@ The project demonstrates two popular adversarial attack methods:
 
 1. **Fast Gradient Sign Method (FGSM):**
    - **Method:** Computes the perturbation in one step as:
-     \[
+     $$
      \delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
-     \]
+     $$
    - **Pros & Cons:** Fast but less effective compared to iterative methods.
 
 2. **Projected Gradient Descent (PGD):**
    - **Method:** Uses an iterative approach:
-     \[
+     $$
      \delta \leftarrow \Pi_{B_p(x, \varepsilon)}\Bigl(\delta + \alpha \cdot \nabla_x L(f(x+\delta), y)\Bigr)
-     \]
-     where \(\Pi_{B_p(x, \varepsilon)}\) projects the perturbation back into the allowed budget.
+     $$
+     where \(\Pi_{B_p(x, \varepsilon)}\) projects the perturbation back into the allowed \(\ell_p\)-ball of radius \(\varepsilon\).
    - **Pros & Cons:** More effective but computationally more intensive.
 
 ---
