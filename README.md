@@ -4,6 +4,10 @@
 
 This repository contains the work for the class exercise on adversarial examples, where the objective is twofold: to learn effective Git project management and to explore how neural networks can be fooled with subtle adversarial perturbations.
 
+
+$$
+\delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
+$$
 ---
 
 ## Objective
