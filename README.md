@@ -107,13 +107,14 @@ The repository includes the following key files and directories:
 
 ## Implementing Adversarial Attacks
 
+
 ### FGSM Attack
 - **Implementation:** Complete the `compute` method in the `FastGradientSignMethod` class within `attack_utils.py`.
 - **Testing:** Run the evaluation script:
   ```bash
-  python evaluate.py --path cnn --model cnn --attack fgs --epsilon 0.05
+  python evaluate.py --path cnn --model cnn --attack fgsm --epsilon 0.05
   ```
-- **Experimentation:** Use `run_xp.py` to test different epsilon values (e.g., \(10^{-1}\), \(10^{-2}\), \(10^{-3}\)).
+- **Experimentation:** Use `run_xp.py` to test different ε values (e.g., 1e-1, 1e-2, 1e-3).
 
 ### PGD Attack
 - **Implementation:** Complete the `compute` method in the `ProjectedGradientDescent` class within `attack_utils.py`.
@@ -121,8 +122,8 @@ The repository includes the following key files and directories:
   ```bash
   python evaluate.py --path cnn --model cnn --attack pgd --epsilon 0.1
   ```
-- **Hyperparameter Tuning:** For a budget of \(\epsilon=0.05\), experiment with different numbers of steps and step sizes (recommended: \(\alpha \approx \epsilon/T\)).
-- **Enhancement:** Modify the initialization in `attack_utils.py` to automatically set the step size \( \alpha \) to \(\epsilon/T\) when not provided.
+- **Hyperparameter Tuning:** For a budget of ε = 0.05, experiment with different numbers of steps and step sizes (recommended: α ≈ ε/T).
+- **Enhancement:** Modify the initialization in `attack_utils.py` to automatically set the step size α to ε/T when not provided.
 
 ---
 
@@ -137,8 +138,7 @@ The repository includes the following key files and directories:
 
 ---
 
-
 ## Conclusion
 
-This project demonstrates how even highly accurate neural networks can be vulnerable to small adversarial perturbations, emphasizing the need for robust defenses. 
-```
+This project demonstrates how even highly accurate neural networks can be vulnerable to small adversarial perturbations, emphasizing the need for robust defenses.
+
