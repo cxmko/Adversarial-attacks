@@ -18,9 +18,9 @@ The project demonstrates two popular adversarial attack methods:
 
 1. **Fast Gradient Sign Method (FGSM):**
    - **Method:** Computes the perturbation in one step as:
-     $$
-     \delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
-     $$
+$$
+\delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
+$$
    - **Pros & Cons:** Fast but less effective compared to iterative methods.
 
 2. **Projected Gradient Descent (PGD):**
