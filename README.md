@@ -3,9 +3,7 @@
 **Course:** DL3AIISO
 
 This repository contains the work for the class exercise on adversarial examples, where the objective is twofold: to learn effective Git project management and to explore how neural networks can be fooled with subtle adversarial perturbations.
-$$
-\delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
-$$
+
 ---
 
 ## Objective
@@ -19,18 +17,11 @@ $$
 The project demonstrates two popular adversarial attack methods:
 
 1. **Fast Gradient Sign Method (FGSM):**
-   - **Method:** Computes the perturbation in one step as:
-     $$
-     \delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
-     $$
+   - **Method:** Computes the perturbation in one step.
    - **Pros & Cons:** Fast but less effective compared to iterative methods.
 
 2. **Projected Gradient Descent (PGD):**
-   - **Method:** Uses an iterative approach:
-     $$
-     \delta \leftarrow \Pi_{B_p(x, \varepsilon)}\Bigl(\delta + \alpha \cdot \nabla_x L(f(x+\delta), y)\Bigr)
-     $$
-     where $\Pi_{B_p(x, \varepsilon)}$ projects the perturbation back into the allowed budget.
+   - **Method:** Uses an iterative approach.
    - **Pros & Cons:** More effective but computationally more intensive.
 --- 
 
