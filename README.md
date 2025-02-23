@@ -6,10 +6,6 @@ This repository contains the work for the class exercise on adversarial examples
 
 ---
 
-$$
-\delta = \varepsilon \cdot \text{sign}(\nabla_x L(f(x), y))
-$$
-
 ## Objective
 
 - **Adversarial Examples:** Learn how minimal, often imperceptible, perturbations can degrade the performance of neural networks trained on the CIFAR10 dataset.
@@ -32,10 +28,9 @@ The project demonstrates two popular adversarial attack methods:
      $$
      \delta \leftarrow \Pi_{B_p(x, \varepsilon)}\Bigl(\delta + \alpha \cdot \nabla_x L(f(x+\delta), y)\Bigr)
      $$
-     where \(\Pi_{B_p(x, \varepsilon)}\) projects the perturbation back into the allowed \(\ell_p\)-ball of radius \(\varepsilon\).
+     where $\Pi_{B_p(x, \varepsilon)}$ projects the perturbation back into the allowed budget.
    - **Pros & Cons:** More effective but computationally more intensive.
-
----
+--- 
 
 
 ## Repository Structure
