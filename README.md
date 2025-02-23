@@ -52,7 +52,7 @@ The repository includes the following key files and directories:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/AlexVerine/TP5.git
+   git clone https://github.com/cxmko/Adversarial-attacks.git
    ```
 2. **Create and Update Your Environment:**
    - Install Git if you haven't already. Installation instructions can be found at [Git SCM](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
@@ -60,10 +60,7 @@ The repository includes the following key files and directories:
      ```bash
      pip install -r requirements.txt
      ```
-   - Alternatively, set up the environment using:
-     ```bash
-     conda env create -f environment.yml
-     ```
+
 
 ---
 
